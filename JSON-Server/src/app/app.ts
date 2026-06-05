@@ -81,7 +81,6 @@ export class App {
           list.filter(u => u.id !== user.id)
         )
       })
-
     }
 
     afterSave(){
