@@ -1,0 +1,38 @@
+<div class="container">
+<h2>Users from JSON Server</h2>
+<div class="form-class">
+  <input 
+  type="text"
+  placeholder="Enter Name"
+  [value]="name()"
+  (input)="name.set($event.target.value)"
+  />
+
+  <input 
+  type="email"
+  placeholder="Enter Email"
+  [value]="email()"
+  (input)="email.set($event.target.value)"
+  />
+
+  <button (click)="submitForm()">
+    {{ediitingUpdateId()?'Update User':'Add User'}}
+  </button>
+</div>
+
+<ul>
+  @for(user of users(); track user.id){
+    <li>
+      <div class="user-list">
+        {{user.id}}. {{user.name}} - {{user.email}} 
+      <strong>{{user.isActive ? "Active":"InActive"}}</strong>
+    </div>
+    <div class="btns">
+      <button (click)="editUser(user)">Edit</button> 
+      <button (click)="toggleStatus(user)">{{user.isActive ? "Deactive":"Active"}}</button>
+      <button (click)="deleteUser(user)">Delete</button>
+    </div>
+    </li>
+  }
+</ul> 
+</div>

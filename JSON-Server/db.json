@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "name": "Bittu",
+      "email": "bittu@gmail.comaaaa",
+      "isActive": false,
+      "id": "dkEu6V443ek"
+    },
+    {
+      "name": "Ratan",
+      "email": "ratan@gmail.com",
+      "isActive": true,
+      "id": "c1M23qinwz4",
+      "status": true
+    },
+    {
+      "name": "Bapan",
+      "email": "bapan@gmail.com",
+      "isActive": true,
+      "id": "JpVVEAaNVHA",
+      "status": false
+    },
+    {
+      "name": "anup",
+      "email": "anup@gmail.com",
+      "isActive": false,
+      "id": "TBkjA9Ucy5U"
+    },
+    {
+      "name": "akash",
+      "email": "akash@gmail.com",
+      "isActive": true,
+      "id": "K32NsKlR4UY"
+    },
+    {
+      "name": "aaa",
+      "email": "aaa@gmail.com",
+      "isActive": true,
+      "id": "LodUqKJHd2s"
+    },
+    {
+      "name": "aparna 123",
+      "email": "aparna123@gmail.com",
+      "isActive": false,
+      "id": "7eW4-6FTv6I"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
