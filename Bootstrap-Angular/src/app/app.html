@@ -1,1 +1,16 @@
-<button class="btn btn-danger">Danger</button>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6">
+      <input class="form-control"
+      [value]="name()"
+      (input)="name.set($event.target.value)"
+      placeholder="Name"
+      />
+    </div>
+    <div class="col-md-6">
+      <button class="btn btn-success" (click)="submitForm()">
+        Save User
+      </button>
+    </div>
+  </div>
+</div>

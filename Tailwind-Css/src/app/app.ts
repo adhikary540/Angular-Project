@@ -8,9 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Bootstrap-Angular');
-  name = signal("Chanda Adhikary");
-  submitForm(){
-    alert(`User ${this.name()} Saved Successfully`);
-  }
+  protected readonly title = signal('Tailwind-Css');
 }

@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "ac2260a8-1572-4875-8aa7-82b3d1a2644a"
+    "analytics": "e7b4482b-02ae-4be4-8c57-bb29d54f3e91"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Bootstrap-Angular": {
+    "Material-Angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -25,10 +25,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
-            ],
+            "styles": ["src/material-theme.scss", "src/styles.css"],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "security": {
@@ -66,10 +63,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Bootstrap-Angular:build:production"
+              "buildTarget": "Material-Angular:build:production"
             },
             "development": {
-              "buildTarget": "Bootstrap-Angular:build:development"
+              "buildTarget": "Material-Angular:build:development"
             }
           },
           "defaultConfiguration": "development"

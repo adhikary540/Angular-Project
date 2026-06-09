@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "ac2260a8-1572-4875-8aa7-82b3d1a2644a"
+    "analytics": "7b9ef15e-200d-4ba5-9f96-a660b4bb6b51"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "Bootstrap-Angular": {
+    "Tailwind-Css": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -26,7 +26,6 @@
               }
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "server": "src/main.server.ts",
@@ -66,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Bootstrap-Angular:build:production"
+              "buildTarget": "Tailwind-Css:build:production"
             },
             "development": {
-              "buildTarget": "Bootstrap-Angular:build:development"
+              "buildTarget": "Tailwind-Css:build:development"
             }
           },
           "defaultConfiguration": "development"
